@@ -1,0 +1,59 @@
+#container1{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: -500px;
+}
+
+#fitLocation1{
+    position: absolute;
+    margin: auto;
+    left: -200px;
+    top: 50px;
+}
+
+
+#container2{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: 300px;
+}
+
+#fitLocation2{
+    position: absolute;
+    margin: auto;
+    left: -200px;
+    top: 50px;
+}
+img{
+    position:absolute;
+    width:799.5px;
+    height:599px;
+}
+
+#vote2.button1 {
+    position: absolute;
+    left: 675px;
+    top: 650px;
+}
+
+#vote1.button1 {
+    position: absolute;
+    left: 675px;
+    top: 650px;
+}
+
+#vote2count{
+    position: absolute;
+    left: 675px;
+    top: 655px;
+}
+
+#vote1count{
+    position: absolute;
+    left: 675px;
+    top: 655px;
+}

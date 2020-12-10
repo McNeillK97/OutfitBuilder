@@ -1,0 +1,50 @@
+<div class = "gradient">
+    <nav>
+        <ul>
+            <li><a href="/">Welcome</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="play"><strong>Play Game</strong></a></li>
+            {{#if user}}
+            <li><a href="voting">Voting</a></li>
+            <li><a href="profile">Profile</a></li>
+            <li><a href="logout">Sign Out</a></li>
+            {{else}}
+            <li><a href="login">Sign In</a></li>
+            <li><a href="register">Sign Up!</a></li>           
+            {{/if}}
+        </ul>
+    </nav>
+        {{#if user}}
+        <h1>Welcome, {{{user.name}}}!</h1>
+        {{else}}
+        <h1>Welcome!</h1>
+        {{/if}}
+        <div class = "opaque">
+            <div class ="text">
+                
+                <img src="/Images/moe.png" alt="moe girl" width="500" height="407">
+                <h2>Create. Create. Create.</h2>
+                <div class = "welcome"></p>There are so many waifu made popular by TV shows and manga. 
+                <br>With <strong>Waifu Creator</strong>, you can create your very own waifu! 
+                customize their looks and put your creation to the test
+                by challenging other people's waifu, and may the best waifu win!</p></div>
+                <br>
+                <br>
+                <h3>Have a look around!</h3>
+                <div class="welcome-bottom">
+                </div>
+                <br>
+                <br>
+                
+                
+                <br>
+            </div>
+            <footer> 
+            <p>
+                Copyright © 2019 Project: Company Website and Pitch<br/>
+                <a href = "">info@teamweeb.com</a>
+            </p>
+        </footer>
+        </div>
+        
+</div>

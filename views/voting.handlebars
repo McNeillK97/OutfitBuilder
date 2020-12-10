@@ -1,0 +1,44 @@
+<div class="gradientPlay">
+    <script src="/js/voting.js"></script>
+<link rel="stylesheet" type="text/css" href="/css/voting.css">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            {{#if user}}
+            <li><a href="profile">Profile</a></li>
+            <li><a href="logout">Sign Out</a></li>
+            {{else}}
+            <li><a href="login">Sign In</a></li>
+            <li><a href="register">Sign Up!</a></li>
+            {{/if}}
+        </ul>
+    </nav>
+
+    <form action="/voting" method="GET"></form>
+    <div id="container1">
+        <div id="fit1Location">
+            <img id="body1" src="Images/Outfit/body.png">
+            <img id="hair1" src="Images/Outfit/Hair0.png">
+            <img id="top1" src="Images/Outfit/Top0.png">
+            <img id="bottom1" src="Images/Outfit/Bottom0.png">
+            <label id="vote1count" for="votes1count">Votes: </label>
+            <form action="/voting1" method="POST">
+                <input type="submit" class="button1" style="background-color:#80CEE1" value="Vote" id="vote1count" onclick="increaseVote(1)">
+            </form>
+        </div>
+    </div>
+    </form>
+    <div id="container2">
+        <div id="fit2Location">
+            <img id="body2" src="Images/Outfit/body.png">
+            <img id="hair2" src="Images/Outfit/Hair0.png">
+            <img id="top2" src="Images/Outfit/Top0.png">
+            <img id="bottom2" src="Images/Outfit/Bottom0.png">  
+            <label id="vote2count" for="votes2">Votes: </label>
+            <form action="/voting2" method="POST">
+                <input type="submit" class="button1" style="background-color:#80CEE1" value="Vote" id="vote2count" onclick="increaseVote(2)">
+            </form>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,189 @@
+body {
+ font-family: 'Quicksand', sans-serif;
+ font-weight: 400;
+ color: rgba(58,58,58,1.0);
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-weight: 500;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #402834;
+}
+
+nav li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+h1 {
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+  font-size: 75%;
+  font-style: italic;
+  text-align: center bottom;
+}
+
+
+label {
+  float: left;
+  display: block;
+  text-align: right;
+  width: 120px;
+  padding-right: 10px;
+}
+
+input {
+  margin-left: 130px;
+}
+input, textarea { 
+  display: block;
+  margin-bottom: 20px;
+}
+
+
+.gradient {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #FFBAD5, #FFF88E); /* Standard syntax (must be last) */
+}
+
+.gradientPlay {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, #FFBAD5, #FFF88E); /* Standard syntax (must be last) */
+}
+
+.opaque {
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0 auto; 
+
+}
+
+.text {
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+
+.pitchText {
+  text-align: center;
+  padding-right: 100px;
+  height: 600px;
+  width: 100%;
+  font-size: larger;
+}
+
+.plan {
+text-align: left !important;
+}  
+
+.playbutton {
+  width: 20%;
+  height: 50px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #02AFCC;
+  text-align: center;
+  cursor: pointer;
+  font-size: x-large;
+}
+
+.loginbutton {
+  width: 10%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  position: absolute;
+  top: 140px;
+  right: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.signupbutton {
+  width: 10%;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  position: absolute;
+  top: 175px;
+  right: 60px;
+  text-align: center;
+  cursor: pointer;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.underGallery {
+  position: absolute;
+  top: 150px;
+}

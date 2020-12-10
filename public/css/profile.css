@@ -1,0 +1,58 @@
+#container1{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: -500px;
+}
+
+#container2{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: -300px;
+}
+
+#container3{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: -100px;
+}
+
+#container4{
+    position: absolute;
+    margin: auto;
+    width: 755px;
+    height: 599px;
+    left: 100px;
+}
+
+#fitLocation1{
+    position: absolute;
+    margin: auto;
+    left: -200px;
+    top: 50px;
+}
+
+
+#fits{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fitLocation2{
+    position: absolute;
+    margin: auto;
+    left: -200px;
+    top: 50px;
+}
+img{
+    position:absolute;
+    width:799.5px;
+    height:599px;
+}

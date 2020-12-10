@@ -1,0 +1,45 @@
+    <div class="gradientPlay">
+                                <script src="/js/code.js"></script>
+
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                {{#if user}}
+                <li><a href="profile">Profile</a></li>
+                <li><a href="logout">Sign Out</a></li>
+                {{else}}
+                <li><a href="login">Sign In</a></li>
+                <li><a href="register">Sign Up!</a></li>           
+                {{/if}}
+            </ul>
+        </nav>
+
+        <div id="container">
+            <div id="fitLocation">
+                <img id="body" src="Images/Outfit/body.png">
+                <img id="hair" src="Images/Outfit/Hair0.png">
+                <img id="top" src="Images/Outfit/Top0.png">
+                <img id="bottom" src="Images/Outfit/Bottom0.png">
+            </div>
+
+            <input type="button" class="button1" style="background-color:#80CEE1" value="PREV" name="topID" id="prevHair" onclick="prevHair()">
+            <input type="button" class="button1" style="background-color:#80CEE1" value="PREV" name="midID" id="prevTop" onclick="prevTop()">
+            <input type="button" class="button1" style="background-color:#80CEE1" value="PREV" name="prevBottom" id="prevBottom" onclick="prevBottom()">
+
+            <input type="button" class="button1" style="background-color:#80CEE1" value="NEXT" name="topID" id="nextHair" onclick="nextHair()">
+            <input type="button" class="button1" style="background-color:#80CEE1" value="NEXT" name="midID" id="nextTop" onclick="nextTop()">
+            <input type="button" class="button1" style="background-color:#80CEE1" value="NEXT" name="bottomID" id="nextBottom" onclick="nextBottom()">
+
+            <input type="button" class="button1" style="background-color:#80CEE1" value="CLEAR" id="clearOutfit" onclick="clearOutfit()">
+            {{#if user}}
+            <form action="/play" method="POST">
+                <input type="hidden" name="hairID" id='hairID' value="0">
+                <input type="hidden" name="topID" id='topID' value="0">
+                <input type="hidden" name="bottomID" id='bottomID' value="0">
+                <input type="submit" class="button1" style="background-color:#80CEE1" value="SAVE" id="saveOutfit" onclick="saveOutfit()">
+            </form>
+        {{/if}}
+
+        </div>
+
+    </div>
